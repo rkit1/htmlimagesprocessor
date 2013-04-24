@@ -6,7 +6,7 @@ using System.Text;
 
 namespace HtmlImagesProcessor
 {
-    class ToDataURI
+    public class ToDataURI
     {
         public static Uri Transform(Uri u)
         {

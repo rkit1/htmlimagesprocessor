@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlImagesProcessor", "HtmlImagesProcessor\HtmlImagesProcessor.csproj", "{418C6B2D-17C0-414A-8895-3B8311FABD47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BufferProcessor", "BufferProcessor\BufferProcessor.csproj", "{F09C8726-E8C5-468D-8BFF-B3BA0928A52D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandlineProcessor", "CommandlineProcessor\CommandlineProcessor.csproj", "{96CEB953-1D08-4CAD-BB0F-1B54FCA1E983}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +17,14 @@ Global
 		{418C6B2D-17C0-414A-8895-3B8311FABD47}.Debug|x86.Build.0 = Debug|x86
 		{418C6B2D-17C0-414A-8895-3B8311FABD47}.Release|x86.ActiveCfg = Release|x86
 		{418C6B2D-17C0-414A-8895-3B8311FABD47}.Release|x86.Build.0 = Release|x86
+		{F09C8726-E8C5-468D-8BFF-B3BA0928A52D}.Debug|x86.ActiveCfg = Debug|x86
+		{F09C8726-E8C5-468D-8BFF-B3BA0928A52D}.Debug|x86.Build.0 = Debug|x86
+		{F09C8726-E8C5-468D-8BFF-B3BA0928A52D}.Release|x86.ActiveCfg = Release|x86
+		{F09C8726-E8C5-468D-8BFF-B3BA0928A52D}.Release|x86.Build.0 = Release|x86
+		{96CEB953-1D08-4CAD-BB0F-1B54FCA1E983}.Debug|x86.ActiveCfg = Debug|x86
+		{96CEB953-1D08-4CAD-BB0F-1B54FCA1E983}.Debug|x86.Build.0 = Debug|x86
+		{96CEB953-1D08-4CAD-BB0F-1B54FCA1E983}.Release|x86.ActiveCfg = Release|x86
+		{96CEB953-1D08-4CAD-BB0F-1B54FCA1E983}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
