@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{418C6B2D-17C0-414A-8895-3B8311FABD47}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{F09C8726-E8C5-468D-8BFF-B3BA0928A52D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HtmlImagesProcessor</RootNamespace>
-    <AssemblyName>HtmlImagesProcessor</AssemblyName>
+    <RootNamespace>BufferProcessor</RootNamespace>
+    <AssemblyName>BufferProcessor</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -33,9 +33,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="HtmlAgilityPack">
       <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net40-client\HtmlAgilityPack.dll</HintPath>
@@ -50,9 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProcessibleDocument.cs" />
+    <Compile Include="CF_HTMLParser.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ToDataURI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HtmlImagesProcessor\HtmlImagesProcessor.csproj">
+      <Project>{418C6B2D-17C0-414A-8895-3B8311FABD47}</Project>
+      <Name>HtmlImagesProcessor</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
