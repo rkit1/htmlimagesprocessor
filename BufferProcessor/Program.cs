@@ -17,7 +17,10 @@ namespace BufferProcessor
         {
             if (!Clipboard.ContainsText(TextDataFormat.Html)) return;
             var bufferData = Clipboard.GetText(TextDataFormat.Html);
-            var bp = new CF_HTMLParser(bufferData);
+            var bp = CF_HTML.Parse(bufferData);
+            ProcessURIs.Go(bp.Item1.DocumentNode, new Uri(bp.Item2["SourceURL"]??"about:blank"));
+            var newBufferData = CF_HTML.Produce(bp.Item1, bp.Item2["SourceURL"]);
+            Clipboard.SetText(newBufferData, TextDataFormat.Html);
             return;
         }
     }

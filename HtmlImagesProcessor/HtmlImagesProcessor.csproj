@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProcessibleDocument.cs" />
+    <Compile Include="ProcessURIs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ToDataURI.cs" />
   </ItemGroup>
